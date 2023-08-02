@@ -122,14 +122,13 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
     <script>
-        // Replace 'YOUR_FORM_ID' with your actual form ID
-        const formId = 'YOUR_FORM_ID';
+        // Access the form id from the environment variable
+        const formId = process.env.FORM_ID;
 
         // Update the form's action attribute with the form id
         const contactForm = document.getElementById("contactForm");
-        contactForm.setAttribute("action", `https://formspree.io/f/${formId}`);
+        contactForm.setAttribute("action", `https://formspree.io/f/${formId});
     </script>
-
 
 
 </body>
